@@ -1,0 +1,30 @@
+General
+--------------------------------------------
+sudo ntpdate -u 2.in.pool.ntp.org
+sudo raspi-config 
+sudo date -s "12 AUG 2017 19:07:40"
+sudo reboot
+sudo apt-get update
+sudo apt-get upgrade
+hostname
+crontab -e
+ifconfig
+sudo apt-get install git
+sudo apt-get install vim
+sudo vim /etc/ntp.conf 
+sudo /etc/init.d/ntp stop
+sudo /etc/init.d/ntp start
+ntpq -p
+crontab -e
+ntpdc -c sysinfo
+sudo /etc/init.d/ntp stop
+sudo ntpdate -d 1.in.pool.ntp.org
+sudo ntpdate 1.in.pool.ntp.org
+sudo apt-get remove ntp
+
+
+Deluged
+--------------------------------------------
+deluge star on reboot add following in /etc/rc.local
+sudo -u pi /usr/bin/python /usr/bin/deluged
+
