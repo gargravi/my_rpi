@@ -4,3 +4,5 @@ SRC_IS=$1
 PRNT_LN="SRC IS $SRC_IS for $PRNT_LN"
 echo $PRNT_LN >> /home/pi/ntp_on_boot.log
 
+#change1
+#change2
